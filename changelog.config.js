@@ -19,12 +19,12 @@ module.exports = {
      },
      docs: {
        description: 'Documentation only changes',
-       emoji: '✏️',
+       
        value: 'docs'
      },
      feat: {
        description: 'A new feature',
-       emoji: '🎸',
+       
        value: 'feat'
      },
      fix: {
