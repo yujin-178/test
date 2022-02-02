@@ -1,6 +1,6 @@
 module.exports = {
    disableEmoji: false,
-   format: '{type} : {subject}',
+   format: 'ype{t} : {subject}',
    list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
    maxMessageLength: 64,
    minMessageLength: 3,
@@ -8,7 +8,7 @@ module.exports = {
    scopes: [],
    types: {
      chore: {
-       description: 'Build process or auxiliary tool changes',
+       description: '빌드 업무 수정, 패키지 매니저 수정',
        emoji: '🤖',
        value: 'chore'
      },
@@ -18,17 +18,17 @@ module.exports = {
        value: 'ci'
      },
      docs: {
-       description: 'Documentation only changes',
-       
+       description: '문서 수정',
+       emoji: '✏️',
        value: 'docs'
      },
      feat: {
-       description: 'A new feature',
-       
+       description: '새로운 기능 추가',
+       emoji: '🎸',
        value: 'feat'
      },
      fix: {
-       description: 'A bug fix',
+       description: '버그 수정, 기능 변경',
        emoji: '🐛',
        value: 'fix'
      },
@@ -38,7 +38,7 @@ module.exports = {
        value: 'perf'
      },
      refactor: {
-       description: 'A code change that neither fixes a bug or adds a feature',
+       description: '코드 리팩토링',
        emoji: '💡',
        value: 'refactor'
      },
@@ -48,12 +48,12 @@ module.exports = {
        value: 'release'
      },
      style: {
-       description: 'Markup, white-space, formatting, missing semi-colons...',
+       description: '코드 formatting, 세미콜론(;) 누락, 코드 변경이 없는 경우',
        emoji: '💄',
        value: 'style'
      },
      test: {
-       description: 'test yujin',
+       description: '테스트 코드, 리팽토링 테스트 코드 추가',
        emoji: '💍',
        value: 'test'
      }
