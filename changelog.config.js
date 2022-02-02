@@ -1,10 +1,10 @@
 module.exports = {
    disableEmoji: false,
-   format: '{type}{scope}: {emoji}{subject}',
-   list: ['test111', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
+   format: '{type} : {subject}',
+   list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
    maxMessageLength: 64,
    minMessageLength: 3,
-   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
+   questions: ['type', 'subject', 'body'],
    scopes: [],
    types: {
      chore: {
@@ -52,7 +52,7 @@ module.exports = {
        emoji: '💄',
        value: 'style'
      },
-     test111: {
+     test: {
        description: 'test yujin',
        emoji: '💍',
        value: 'test'
