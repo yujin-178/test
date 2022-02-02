@@ -1,7 +1,7 @@
 module.exports = {
    disableEmoji: false,
    format: 'ype{t} : {subject}',
-   list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
+   list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'perf'],
    maxMessageLength: 64,
    minMessageLength: 3,
    questions: ['type', 'subject', 'body'],
@@ -11,11 +11,6 @@ module.exports = {
        description: '빌드 업무 수정, 패키지 매니저 수정',
        emoji: '🤖',
        value: 'chore'
-     },
-     ci: {
-       description: 'CI related changes',
-       emoji: '🎡',
-       value: 'ci'
      },
      docs: {
        description: '문서 수정',
@@ -33,19 +28,14 @@ module.exports = {
        value: 'fix'
      },
      perf: {
-       description: 'A code change that improves performance',
+       description: '코드 성능향상',
        emoji: '⚡️',
        value: 'perf'
      },
      refactor: {
-       description: '코드 리팩토링',
+       description: '코드 리팩토링(코드를 깔끔하게)',
        emoji: '💡',
        value: 'refactor'
-     },
-     release: {
-       description: 'Create a release commit',
-       emoji: '🏹',
-       value: 'release'
      },
      style: {
        description: '코드 formatting, 세미콜론(;) 누락, 코드 변경이 없는 경우',
